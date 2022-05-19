@@ -1,20 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset='utf-8'/>
-	<title>www.layabox.com</title>
-    <meta name='renderer' content='webkit'>
-	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
-	<meta name='apple-mobile-web-app-capable' content='yes' />
-	<meta name='full-screen' content='true' />
-	<meta name='x5-fullscreen' content='true' />
-	<meta name='360-fullscreen' content='true' />
-	<meta http-equiv='expires' content='0' />
-	<meta name='laya' screenorientation='landscape' />
-	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-	<meta http-equiv='expires' content='0' />
-	<meta http-equiv='Cache-Control' content='no-siteapp' />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>汉兜 - 汉字 Wordle</title>
+  <meta name="description" content="汉兜 - 汉字 Wordle">
+  <meta property="og:image" content="https://handle.antfu.me/og.png"/>
+  <meta property="og:title" content="汉兜"/>
+  <meta property="og:description" content="汉兜 - 汉字 Wordle"/>
+  <meta name="twitter:image" content="https://handle.antfu.me/og.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:creator" content="antfu7"/>
+  <script type="module" crossorigin src="/assets/index.0b7057b1.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.5a5c63f7.js">
+  <link rel="modulepreload" href="/assets/polyphones.f3f0c057.js">
+  <link rel="modulepreload" href="/assets/idioms.6980d756.js">
+  <link rel="modulepreload" href="/assets/locale.0a09d20f.js">
+  <link rel="stylesheet" href="/assets/index.e08e1b6e.css">
 </head>
-<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #000;'>
-<script src='LayaSample.max.js' loader='laya'></script>
+<body>
+  <div id="app"></div>
+  <script>
+    (function() {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  
 </body>
 </html>
